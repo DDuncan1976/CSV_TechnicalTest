@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<link rel="stylesheet" type="text/css" href="~/Content/MyAppStyle.css" />
+
+<div class="DivPageHeader">@ViewBag.Title</div>
+
+<div class="DivContainer">
+    <div class="DivSubHeader">@ViewBag.Message</div>
+            <div class="DivSubHeaderContent">
+            The purpose of the technical test is to evaluate both your technical abilities and coding style in relation to best practices.
+
+            Your solution should be written and structured as if it were going into a production system with appropriate:
+            <ul>
+                <li>HTML structure</li>
+                <li>Validation</li>
+                <li>Testing</li>
+            </ul>
+        </div>
+
+        <div class="DivSubHeader">The Task</div>
+        <div class="DivSubHeaderContent">
+        A non-empty CSV consisting of N integers and sorted in a non-decreasing order is given.
+        The leader of this collection of values is the value that occurs in more than half of the elements of the CSV.
+        </div>
+
+        <div class="DivSubHeader">
+            Instruction</div>
+            <div class="DivSubHeaderContent">
+                You should construct an ASP.NET solution that allows a user to:
+
+                    <ul>
+                        <li>upload a CSV file consisting of N integers, sorted in a non-decreasing order</li>
+                        <li>then outputs the leader of the values.</li>
+                        <li>The site should return -1 if the collection does not contain a leader.</li>
+                    </ul>
+                </div>
+
+                <div class="DivSubHeader">Example:</div>
+                <div class="DivSubHeaderContent">
+                For example, given CSV consisting of ten elements such that:
+                2, 2, 2, 2, 2, 3, 4, 4, 4, 6
+                the result should return −1, because the value that occurs most frequently in the CSV, 2, occurs five times, and 5 is not more than half of 10.
+                Given CSV consisting of five elements such that:
+                1, 1, 1, 1, 50
+                the result should return 1.
+
+                Assume that:
+                <ul>
+                    <li>N is an integer within the range [1..100,000];</li>
+                    <li>each element of the CSV is an <b>integer</b> within the range [0..2147483647]</li>
+                    <li>CSV is sorted in <b>non-decreasing</b> order.</li>
+                </ul>
+                </div>
+</div>
+
+

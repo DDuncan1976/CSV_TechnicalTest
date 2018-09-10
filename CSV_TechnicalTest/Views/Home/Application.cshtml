@@ -1,0 +1,40 @@
+﻿<link rel="stylesheet" type="text/css" href="~/Content/MyAppStyle.css" />
+
+    @{
+        ViewBag.Title = "Application";
+    }
+
+<div class="DivPageHeader">Application</div>
+<div class="DivContainer">
+    <div class="DivSection">
+        <div class="DivSectionHeader">
+            Step 1: Select your CSV file
+        </div>
+        <div class="DivContent">
+            <form>
+                <fieldset>
+                    <input type="file" accept=".csv" id="File_Picker" class="Btn_FileSelectorCustom" />
+                    <input type="reset" value="Reset Selection" class="Btn_SubmitCustom" id="Reset-File-Picker" onclick="ResetSelectionDisplay()" />
+                    <input type="button" value="Analyze CSV file" class="Btn_SubmitCustom" onclick="CSVFileReader()" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="DivSection">
+            <div class="DivSectionHeader">
+                Step 2: CSV File Contents
+            </div>
+            <div class="Div_CSVResults" id="CSV_FileContent"></div>
+    </div>
+    <div class="DivSection">
+        <div class="DivSectionHeader">
+            Step 3: CSV Analysis Results
+        </div>
+        <div class="" id="CSV_IntegerArrayResults"></div>
+        <div class="" id="CSV_Results"></div>
+        <div class="DivCSV_LeaderResults" id="CSV_LeaderResults"></div>
+    </div>
+    </div>
+<script type="text/javascript" src="~/Scripts/CSVFileReader.js"></script>
+
+
